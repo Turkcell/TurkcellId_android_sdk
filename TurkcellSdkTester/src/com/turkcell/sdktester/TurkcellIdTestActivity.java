@@ -26,7 +26,7 @@ public class TurkcellIdTestActivity extends Activity implements TurkcellIdManage
 
 
 		appIdText =  new EditText(this);
-		appIdText.setText("123"); //121212 - test
+		appIdText.setHint("YOUR_APPLICATION_ID"); 
 		container.addView(appIdText);
 
 		fullScreenCheckBox = new CheckBox(this);
