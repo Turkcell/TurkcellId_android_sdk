@@ -1,5 +1,5 @@
 package tr.com.turkcell.turkcellid;
 
-public class UnusedStub {
-	private UnusedStub() { }
+public final class UnusedStub {
+    private UnusedStub() { }
 }
