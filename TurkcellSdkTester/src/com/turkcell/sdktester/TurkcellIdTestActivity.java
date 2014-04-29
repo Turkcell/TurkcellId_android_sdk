@@ -15,8 +15,10 @@ public class TurkcellIdTestActivity extends Activity implements TurkcellIdManage
 
 	private TurkcellIdManager turkcellIdManager;
 	private EditText appIdText;
+	private CheckBox testServer;
 	private CheckBox fullScreenCheckBox;
-
+	private CheckBox hasSmsSupport;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,30 +26,47 @@ public class TurkcellIdTestActivity extends Activity implements TurkcellIdManage
 		LinearLayout container = new LinearLayout(this);
 		container.setOrientation(LinearLayout.VERTICAL);
 
+		testServer = new CheckBox(this);
+		testServer.setText("Test server");
+		container.addView(testServer);
 
 		appIdText =  new EditText(this);
-		appIdText.setHint("YOUR_APPLICATION_ID"); 
+		appIdText.setText("123"); //121212 - test
 		container.addView(appIdText);
 
 		fullScreenCheckBox = new CheckBox(this);
 		fullScreenCheckBox.setText("Full screen");
 		container.addView(fullScreenCheckBox);
+		
+		hasSmsSupport = new CheckBox(this);
+		hasSmsSupport.setText("SMS support");
+		container.addView(hasSmsSupport);
 
 		Button autoLoginButton =  new Button(this);
 		autoLoginButton.setText("Auto Login With Turkcell ID");
 		autoLoginButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString());
+				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString(), testServer.isChecked());
 				turkcellIdManager.showLoginDialog(TurkcellIdTestActivity.this, fullScreenCheckBox.isChecked());
 			}
 		});
 		container.addView(autoLoginButton);
+		
+		Button noSmsSupportButton =  new Button(this);
+		noSmsSupportButton.setText("Device has SMS support");
+		noSmsSupportButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString(), testServer.isChecked());
+				turkcellIdManager.showLoginDialog(TurkcellIdTestActivity.this, fullScreenCheckBox.isChecked(), hasSmsSupport.isChecked());
+			}
+		});
+		container.addView(noSmsSupportButton);
 
 		Button logoutButton =  new Button(this);
 		logoutButton.setText("Logout");
 		logoutButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString());
+				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString(), testServer.isChecked());
 				turkcellIdManager.logout();
 				Toast.makeText(TurkcellIdTestActivity.this, "logged out", Toast.LENGTH_SHORT).show();
 			}
@@ -58,7 +77,7 @@ public class TurkcellIdTestActivity extends Activity implements TurkcellIdManage
 		changePasswordButton.setText("Change password");
 		changePasswordButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString());
+				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString(), testServer.isChecked());
 				turkcellIdManager.showChangePasswordDialog(TurkcellIdTestActivity.this, fullScreenCheckBox.isChecked());
 			}
 		});
