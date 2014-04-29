@@ -19,11 +19,12 @@ Application ID could be get from sabri.elci@turkcell.com.tr
   public class ExampleActivity extends Activity implements TurkcellIdManager.TurkcellIdListener {
  
          private TurkcellIdManager turkcellIdManager;
+		 private boolean isTestServer;
  
          @Override
          protected void onCreate(Bundle savedInstanceState) {
                  super.onCreate(savedInstanceState);
-                 turkcellIdManager = new TurkcellIdManager(this, YOUR_APPLICATION_ID);
+                 turkcellIdManager = new TurkcellIdManager(this, YOUR_APPLICATION_ID, isTestServer);
                  turkcellIdManager.showLoginDialog(this, true);
          }
  
