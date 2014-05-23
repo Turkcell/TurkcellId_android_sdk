@@ -1,8 +1,8 @@
 package com.turkcell.sdktester;
 
 import tr.com.turkcell.turkcellid.TurkcellIdManager;
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
-public class TurkcellIdTestActivity extends Activity implements TurkcellIdManager.TurkcellIdListener {
+public class TurkcellIdTestActivity extends FragmentActivity implements TurkcellIdManager.TurkcellIdListener {
 
 	private TurkcellIdManager turkcellIdManager;
 	private EditText appIdText;
