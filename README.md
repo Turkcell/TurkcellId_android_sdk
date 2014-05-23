@@ -11,12 +11,12 @@ Application ID could be get from sabri.elci@turkcell.com.tr
  package com.example.app;
  
   import tr.com.turkcell.turkcellid.TurkcellIdManager;
-  import android.app.Activity;
+  import android.support.v4.app.FragmentActivity;
   import android.os.Bundle;
   import android.widget.Toast;
  
  
-  public class ExampleActivity extends Activity implements TurkcellIdManager.TurkcellIdListener {
+  public class ExampleActivity extends FragmentActivity implements TurkcellIdManager.TurkcellIdListener {
  
          private TurkcellIdManager turkcellIdManager;
 		 private boolean isTestServer;
