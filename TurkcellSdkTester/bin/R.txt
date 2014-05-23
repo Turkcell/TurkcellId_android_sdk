@@ -1,0 +1,5 @@
+int drawable ic_launcher 0x7f020000
+int string app_name 0x7f030000
+int string build_date 0x7f030003
+int string version_code 0x7f030001
+int string version_name 0x7f030002

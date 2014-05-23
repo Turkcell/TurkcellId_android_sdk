@@ -1,0 +1,4 @@
+int string app_name 0x7f020000
+int string build_date 0x7f020003
+int string version_code 0x7f020001
+int string version_name 0x7f020002
