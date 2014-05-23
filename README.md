@@ -40,3 +40,9 @@ Application ID could be get from sabri.elci@turkcell.com.tr
  
   }
 ```
+
+Also, you have to add these code to your activity declaration at the AndroidManifest.xml which host TurkcellId Dialog.
+
+```java
+android:configChanges="orientation|screenSize" 
+```
