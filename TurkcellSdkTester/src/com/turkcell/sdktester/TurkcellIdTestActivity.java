@@ -18,6 +18,7 @@ public class TurkcellIdTestActivity extends FragmentActivity implements Turkcell
 	private CheckBox testServer;
 	private CheckBox fullScreenCheckBox;
 	private CheckBox hasSmsSupport;
+	private CheckBox drl;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,10 @@ public class TurkcellIdTestActivity extends FragmentActivity implements Turkcell
 		hasSmsSupport.setText("SMS support");
 		container.addView(hasSmsSupport);
 
+		drl = new CheckBox(this);
+		drl.setText("Disable Radius Login");
+		container.addView(drl);
+
 		Button autoLoginButton =  new Button(this);
 		autoLoginButton.setText("Auto Login With Turkcell ID");
 		autoLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +66,16 @@ public class TurkcellIdTestActivity extends FragmentActivity implements Turkcell
 			}
 		});
 		container.addView(noSmsSupportButton);
+		
+		Button drlButton =  new Button(this);
+		drlButton.setText("Disable Radius Login");
+		drlButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				turkcellIdManager = new TurkcellIdManager(TurkcellIdTestActivity.this, appIdText.getText().toString(), testServer.isChecked());
+				turkcellIdManager.showLoginDialog(TurkcellIdTestActivity.this, fullScreenCheckBox.isChecked(), hasSmsSupport.isChecked(), drl.isChecked());
+			}
+		});
+		container.addView(drlButton);
 
 		Button logoutButton =  new Button(this);
 		logoutButton.setText("Logout");
