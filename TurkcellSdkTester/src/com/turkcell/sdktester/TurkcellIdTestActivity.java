@@ -102,8 +102,8 @@ public class TurkcellIdTestActivity extends FragmentActivity implements Turkcell
 	}
 
 	@Override
-	public void onTurkcellIdAuthorized(String authToken) {
-		Toast.makeText(this, "success, authToken: " + authToken, Toast.LENGTH_LONG).show();
+	public void onTurkcellIdAuthorized(String authToken,Boolean flag) {
+		Toast.makeText(this, "success, authToken: " + authToken+",isRememberMeLogin: " + flag, Toast.LENGTH_LONG).show();
 
 	}
 
