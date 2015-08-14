@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:extraproperty="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayoutRememberMe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsdk_white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeaderLogin"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/lsdk_defaultHeaderColor"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageViewRememberMeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/imageContentDesc"
+            android:src="@drawable/lsdk_icon_ustbar_turkcellcircle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBaseRememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutHeaderLogin"
+        android:background="@color/lsdk_white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRememberMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/lsdk_defaultHeaderColor"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                            android:id="@+id/textViewHeaderRememberMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/rememberMeHeader"
+                            android:textColor="@color/lsdk_white"
+                            android:textSize="20sp"
+                            extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutNormalLoginBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/imageRememberMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:contentDescription="@string/imageContentDesc"
+                        android:src="@drawable/lsdk_icon_hesabim" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                        android:id="@+id/rememberMeInformationText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:textColor="@color/lsdk_black"
+                        android:textSize="18sp" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                        android:id="@+id/rememberMeYesButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/shape_rounded_button_positive_background_with_color"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/rememberMeYes"
+                        android:textColor="@color/lsdk_black"
+                        android:textSize="18sp" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                        android:id="@+id/rememberMeNoButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/shape_rounded_button_negative_background"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/rememberMeNo"
+                        android:textColor="@color/lsdk_black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutMobilsignLoginBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        android:id="@+id/editTextMobilsignLoginMsisdn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:digits="@string/allowedCharactersPhoneEdit"
+                        android:ellipsize="end"
+                        android:ems="11"
+                        android:gravity="center"
+                        android:hint="@string/loginNormalLoginMsisdnHint"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:singleLine="true"
+                        android:textColor="@color/lsdk_gray1"
+                        android:textSize="20sp"
+                        extraproperty:loginSDKCustomFontEdit="Turkcell_Satura_Demi.ttf" >
+					</com.turkcell.loginsdk.helper.LoginSDKFontEdittext>
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        android:id="@+id/editTextMobilsignLoginTck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:digits="@string/allowedCharactersPhoneEdit"
+                        android:ellipsize="end"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/loginNormalLoginTckHint"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:singleLine="true"
+                        android:textColor="@color/lsdk_gray1"
+                        android:textSize="20sp"
+                        extraproperty:loginSDKCustomFontEdit="Turkcell_Satura_Demi.ttf" >
+                  </com.turkcell.loginsdk.helper.LoginSDKFontEdittext>
+
+                    <Button
+                        android:id="@+id/buttonMobilsignLoginSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/lsdk_blue3"
+                        android:text="@string/loginNormalLoginSignIn"
+                        android:textColor="@color/lsdk_gray1"
+                        android:textSize="18sp" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/loginMobilsigLoginNewPassword1"
+                        android:textColor="@color/lsdk_gray2"
+                        android:textSize="14sp"
+                        extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutOpenMessageAdSoyad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal" >
+
+                        <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:text="@string/loginMobilsigLoginNewPassword2"
+                            android:textColor="@color/lsdk_gray1"
+                            android:textSize="16sp"
+                            extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/imageContentDesc" />
+
+                        <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="@string/loginMobilsigLoginNewPassword3"
+                            android:textColor="@color/lsdk_gray1"
+                            android:textSize="16sp"
+                            extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLoginBaseForLeftMenuClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</RelativeLayout>

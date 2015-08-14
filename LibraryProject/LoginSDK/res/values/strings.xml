@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Uygulama Bilgi -->
+    <string name="app_name">Turkcell</string>
+    <string name="tcell_account_name">Turkcell</string>
+    <string name="account_type">com.turkcell.loginsdk</string>
+    <string name="auth_token_type">Turkcell AuthToken</string>
+    <!-- Alert -->
+    <string name="logoutAlertBody">Çıkış yapmak istediğinize emin misiniz?</string>
+    <string name="logoutAlertPositive">Çıkış Yap</string>
+    <string name="logoutAlertNegative">Devam Et</string>
+
+    <!-- Login -->
+    <string name="lsdkloginHeader">Giriş Yap</string>
+    <string name="lsdkloginButtonSignIn">Giriş Yap</string>
+    <string name="lsdkloginButtonSignOut">Çıkış Yap</string>
+    <string name="lsdkloginTypePasswordGSM">GSM Numaranız</string>
+    <string name="lsdkloginTypePasswordPass">Şifre</string>
+    <string name="mobilSignInfoWaiting">Lütfen aşağıdaki bilgileri cep telefonunuza gelen bilgilerle karşılaştırarak, telefonunuz üzerinden Mobil İmza PIN\'inizi girin.</string>
+    <string name="mobilSignInfoComplete">Giriş işleminiz tamamlandı, az sonra ilgili sayfaya yönlendireleceksiniz.</string>
+    <string name="mobilSignHeaderWaiting">Giriş Yapılıyor…</string>
+    <string name="mobilSignHeaderComplete">Giriş Yapıldı!</string>
+    <string name="loginMobilSignClock">SAAT: </string>
+    <string name="loginMobilSignDate">TARİH: </string>
+    <string name="loginAccountLocked">Çok fazla yanlış giriş sonrası hesabınız bir süreliğine askıya alındı.Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="loginInvalidUsername">Geçersiz kullanıcı adı girdiniz.Lütfen kullanıcı adınızı kontrol ediniz.</string>
+    <string name="loginInvalidCaptcha">Geçersiz güvenlik kodu. Lütfen kontrol edip tekrar giriş yapınız.</string>
+    <string name="loginServiceOnFailure">Şu anda hizmet verilemiyor. Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="loginInvalidCredentials">Geçersiz kullanıcı adı veya şifre. Lütfen girilen bilgileri kontrol ediniz.</string>
+    <string name="lsdkLoginCheckUsername">GSM numaranızı hatalı girdiniz. Lütfen kontrol ederek tekrar deneyiniz.</string>
+    <string name="lsdkLoginCheckPass">Şifreniz en az 6 karakterden oluşmaktadır. Lütfen kontrol ederek tekrar deneyiniz.</string>
+    <string name="loginCaptchaRequired">Giriş yapabilmek için lütfen güvenlik kodu girişi yapınız.</string>
+    <string name="loginPasswordExpired">Şifrenizin süresi dolmuştur.Şifre değiştir\'e giderek şifrenizi değiştirebilirsiniz.</string>
+    <string name="allowedCharactersPhoneEdit">0123456789</string>
+    <string name="allowedCharactersPhoneEditCC">0123456789</string>
+    <string name="loginErrorGsmEmpty">Telefon numarasını giriniz.</string>
+    <string name="loginErrorTcId">11 haneli TC numaranızın son iki hanesini giriniz.</string>
+    <string name="loginErrorTurkcellSifre">Turkcell şifrenizi giriniz.</string>
+    <string name="loginErrorTwoDigit">Telefonu numaranızın son iki hanesini giriniz.</string>
+
+    <!-- Yeni Login -->
+    <string name="normalLoginText">TURKCELL ŞİFRE</string>
+    <string name="rememberMeHeader">Beni Hatırla</string>
+    <string name="rememberMeText">Beni Hatırla</string>
+    <string name="mobilsignLoginText">MOBİL İMZA</string>
+    <string name="loginNormalLoginMsisdnHint">GSM Numaranız</string>
+    <string name="loginNormalLoginPasswordHint">Turkcell Şifreniz</string>
+    <string name="loginRemindMe">Tüm Turkcell uygulamalarına giriş yap</string>
+    <string name="loginNormalLoginChangePass">Şifre Değiştir</string>
+    <string name="loginNormalLoginTakePass">Şifre Al</string>
+    <string name="loginNormalLoginForgotPass">Şifremi Unuttum</string>
+    <string name="loginNormalLoginSignIn">Giriş Yap</string>
+    <string name="loginNormalLoginForgotUser">Başka Numarayla Giriş Yap</string>
+    <string name="loginNormalLoginNewPassword1">ŞİFRE ALMAK İÇİN</string>
+    <string name="loginNormalLoginNewPassword2">SIFRE</string>
+    <string name="loginNormalLoginNewPassword3">2222</string>
+    <string name="loginMobilsigLoginNewPassword1">MOBİL İMZA ALMAK İÇİN</string>
+    <string name="loginMobilsigLoginNewPassword2">ADSOYAD</string>
+    <string name="loginMobilsigLoginNewPassword3">2929</string>
+    <string name="loginNormalLoginCapthchaHint">Güvenlik Kodu</string>
+    <string name="loginNormalLoginTckHint">TCKN son 2 hane</string>
+    <string name="login3LoginButton">Giriş Yap</string>
+    <string name="login3LoginButtonOther">Başka GSM No İle Giriş</string>
+    <string name="login3gInvalidTwoDigis">Geçersiz son iki hane.Lütfen tekrar deneyiniz.</string>
+    <string name="login3gTooManyCall">Çok sayıda yanlış giriş yapıldığı için son iki haneyle giriş bir süreliğine deaktif olmuştur. Lütfen bir süre bekleyiniz ya da Turkcell Şifreniz ile giriş yapınız.</string>
+    <string name="login3gConnectionTypeChanged">Kablosuz ağa geçiş yaptığınız için Turkcell Şifreniz ile giriş yapmanız gerekmektedir.</string>
+    <string name="loginNormalLoginCheckboxHint">Bu uygulamaya giriş yaparak Hesabım,Platinum ve Profesyoneller Kulubü uygulamalarına kolayca ve güvenli bir şekilde giriş yapabilirsiniz.</string>
+
+    <!-- Sifre Degistir -->
+    <string name="lsdkchangePasswordHeader">Şifre Değiştir</string>
+    <string name="changePasswordChange">Şifremi Değiştir</string>
+    <string name="changePassMsisdnHint">Telefon Numarası</string>
+    <string name="changePassOldPassHint">Eski Şifre</string>
+    <string name="changePassNewPassHint">Yeni Şifre</string>
+    <string name="changePassNewPassAgainHint">Yeni Şifre (Tekrar)</string>
+    <string name="changePassCaptchaRequired">Şifre değiştirmek için lütfen güvenlik kodu giriş yapınız.</string>
+    <string name="changePassInvalidCaptcha">Geçersiz güvenlik kodu.Lütfen kontrol edip tekrar giriş yapınız.</string>
+    <string name="changePassAccountLocked">Hesabınız bir süreliğine askıya alındı.Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="changePassInvalidCredentials">Lütfen girilen bilgileri kontrol ediniz.</string>
+    <string name="changePassServiceOnFailure">Şu anda hizmet verilemiyor.Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="changePassServiceOnSuccess">İşleminiz başarıyla gerçekleştirildi.Yeni Şifreniz mesaj olarak iletilecektir.</string>
+    <string name="changePassInvalidUserName">Geçersiz telefon numarası.Lütfen tekrar deneyiniz.</string>
+    <string name="changePassword_passwordMatch">Yeni Turkcell Şifrenizi hatalı girdiniz. Lütfen kontrol ederek tekrar deneyiniz.</string>
+    <string name="changePassword_oldNewMatch">Yeni Turkcell şifreniz, mevcut Turkcell Şifreniz ile aynı olamaz.</string>
+    <string name="changePassword_newPassword">Yeni şifreniz en az 6 karakterden oluşmalıdır.</string>
+    <string name="changePassword_invalidChars">Turkcell Şifreniz, harf, rakam veya bunların birleşiminden oluşmalıdır.</string>
+    <string name="changePassword_sameChars">Turkcell Şifreniz aynı karakterlerden oluşamaz.</string>
+    <string name="changePassword_seqChars">Turkcell Şifreniz ardışık karakterlerden oluşamaz.</string>
+    <string name="changePassword_phoneInfo">Turkcell Şifreniz telefon numaranız ile aynı olamaz.</string>
+    <string name="changePassword_msisdn">GSM numarasını giriniz.</string>
+    <string name="changePassword_oldPasswordEmpty">Eski Turkcell Şifrenizi giriniz.</string>
+    <string name="changePassword_newPasswordEmpty">Yeni Turkcell Şifrenizi giriniz.</string>
+    <string name="changePassword_Success">Şifreniz değiştirildi</string>
+    <string name="changePassword_turkcellSubscriber">Turkcell Abonesiyim</string>
+    <string name="changePassword_nonturkcellSubscriber">Başka Bir Operatör Abonesiyim</string>
+    <string name="changePassword_quit">Vazgeç</string>
+
+    <!-- POPUP -->
+    <string name="commonPopupHeaderError">Hata</string>
+    <string name="commonPopupHeaderCaution">Uyarı</string>
+    <string name="commonPopupHeaderPositive">Başarılı</string>
+    <string name="commonPopupHeaderInfo">Bilgi</string>
+    <string name="commonPopupHeaderApproval">Onay</string>
+    <string name="commonpopupbuttonnegative">Hayır</string>
+    <string name="commonpopupbuttonpositive">Evet</string>
+    <string name="commonpopupbuttonok">Tamam</string>
+
+    <!-- Remember Me -->
+    <string name="lsdkRememberMeHeader">Beni Hatırla</string>
+    <string name="rememberMeYes">Evet, Beni Hatırla</string>
+    <string name="rememberMeNo">Hayır, Devam Et</string>
+    <string name="imageContentDesc">Image Desc</string>
+    <string name="rememberMeInfoPart1">Cihazınıza yüklü Hesabım uygulamasına giriş yaparken de</string>
+    <string name="rememberMeInfoPart2">numaralı hattınızı hatırlamamızı ister misiniz?</string>
+
+</resources>

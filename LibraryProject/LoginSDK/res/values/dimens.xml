@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="lsdk_button_padding">20dp</dimen>
+    <dimen name="lsdk_stroked_button_padding">19.5dp</dimen>
+    <dimen name="edittext_padding">20dp</dimen>
+    <dimen name="stroke_width">0.5dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="badge_corner_radius">5dp</dimen>
+
+</resources>

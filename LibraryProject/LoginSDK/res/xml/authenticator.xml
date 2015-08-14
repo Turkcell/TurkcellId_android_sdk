@@ -1,0 +1,6 @@
+<account-authenticator
+    android:accountType="com.turkcell.loginsdk"
+    android:icon="@drawable/lsdk_icon_turkcell"
+    android:label="@string/tcell_account_name"
+    android:smallIcon="@drawable/lsdk_icon_turkcell"
+    xmlns:android="http://schemas.android.com/apk/res/android"></account-authenticator>

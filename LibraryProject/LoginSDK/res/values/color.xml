@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lsdk_defaultHeaderColor">#3FB0E8</color>
+    <color name="lsdk_defaultSignInButtonColor">#FFE000</color>
+    <color name="lsdk_defaultNegativeButtonColor">#FFFFFF</color>
+    <color name="lsdk_transparent">#00000000</color>
+    <color name="lsdk_white">#FFFFFF</color>
+    <color name="lsdk_white246">#F6F6F6</color>
+    <color name="lsdk_black">#000000</color>
+    <color name="lsdk_black_trans">#80000000</color>
+    <color name="lsdk_gray1">#4D4D4D</color>
+    <color name="lsdk_gray2">#7D7D7D</color>
+    <color name="lsdk_gray3">#D5D5D5</color>
+    <color name="lsdk_gray4">#7B8497</color>
+    <color name="lsdk_gray5">#B7DDEF</color>
+    <color name="lsdk_gray6">#019BD7</color>
+    <color name="lsdk_gray7">#6F7990</color>
+    <color name="lsdk_gray8">#CFD3DC</color>
+    <color name="lsdk_gray_pale">#B5BCCB</color>
+    <color name="lsdk_gray_pale_2">#707a8f</color>
+    <color name="lsdk_gray_divider">#DADADA</color>
+    <color name="lsdk_blue1">#3FB0E8</color>
+    <color name="lsdk_blue2">#363E4F</color>
+    <color name="lsdk_blue3">#309FE2</color>
+    <color name="lsdk_blue4">#0A83BF</color>
+    <color name="lsdk_blue5">#181E24</color>
+    <color name="lsdk_dark_blue">#319FE2</color>
+    <color name="lsdk_dark_blue_2">#353D50</color>
+    <color name="lsdk_green1">#03E172</color>
+    <color name="lsdk_green2">#67D74B</color>
+    <color name="lsdk_yellow1">#FF7E00</color>
+    <color name="lsdk_yellow2">#FFE600</color>
+    <color name="lsdk_red2">#FF4D00</color>
+    <color name="lsdk_red">#FF0000</color>
+    <color name="lsdk_orange">#FFA300</color>
+    <color name="lsdk_pager_selected">#6B788C</color>
+    <color name="lsdk_pager_unselected">#CDD2D8</color>
+    <color name="lsdk_loading_backround">#00AFEC</color>
+    <color name="lsdk_gray_background">#f4f5f8</color>
+    <color name="lsdk_edittext_stroke">#D5D9E4</color>
+    <color name="lsdk_button_yellow_background">#FFE000</color>
+    <color name="lsdk_button_black_background">#4A4A4A</color>
+    <color name="lsdk_button_yellow_background_on_click">#FFCC00</color>
+    <color name="lsdk_list_divider">#E9EBEF</color>
+    <color name="nav_drawer_list_divider">#A4A4A4</color>
+    <color name="lsdk_list_background_pressed">#D5D5D5</color>
+    <color name="lsdk_menu_background">#1E1E1E</color>
+    <color name="lsdk_paymentHintBlue">#267CB6</color>
+
+</resources>

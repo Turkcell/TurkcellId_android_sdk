@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:extraproperty="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popover_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageViewCommonPopupType"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/imageContentDesc"
+            android:src="@drawable/lsdk_icon_positive" />
+    </LinearLayout>
+
+    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+        android:id="@+id/loginSdkCommonPopupType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/lsdk_black"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" >
+	</com.turkcell.loginsdk.helper.LoginSDKFontTextView>
+
+    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+        android:id="@+id/loginSdkCommonPopupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:minEms="100"
+        android:textColor="@color/lsdk_black"
+        android:textSize="18sp"
+        extraproperty:loginSDKCustomFont="Turkcell_Satura_Demi.ttf" >
+    </com.turkcell.loginsdk.helper.LoginSDKFontTextView>
+
+    <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+        android:id="@+id/buttonCommonPopup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/commonpopupbuttonok"
+        android:textColor="@color/lsdk_black"
+        android:textSize="19sp" />
+
+</LinearLayout>

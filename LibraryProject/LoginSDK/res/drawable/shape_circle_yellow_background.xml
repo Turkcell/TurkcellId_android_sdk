@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <solid android:color="@color/lsdk_yellow2" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/badge_corner_radius"
+        android:bottomRightRadius="@dimen/badge_corner_radius"
+        android:topLeftRadius="@dimen/badge_corner_radius"
+        android:topRightRadius="@dimen/badge_corner_radius" />
+
+</shape>

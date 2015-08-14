@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginSDKFontTextView">
+        <attr name="loginSDKCustomFont" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="FontButton">
+        <attr name="loginSDKCustomFontBtn" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="FontAutoCompleteTextViewBackEvent">
+        <attr name="loginSDKCustomFontAuto" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="LoginSDKFontEdittext">
+        <attr name="loginSDKCustomFontEdit" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="LoginSDKFontCheckBox">
+        <attr name="loginSDKCustomFontCbox" format="string"/>
+    </declare-styleable>
+    
+    
+</resources>

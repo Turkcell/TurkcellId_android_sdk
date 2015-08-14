@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:extraproperty="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutCustomDialogBase"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCustomDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageViewCustomDialogTurkcellIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/imageContentDesc"
+            android:src="@drawable/lsdk_loaderturkcellicon" />
+
+        <ImageView
+            android:id="@+id/imageViewCustomDialogCircle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/imageContentDesc"
+            android:src="@drawable/lsdk_loadercircle" />
+    </RelativeLayout>
+
+</LinearLayout>
