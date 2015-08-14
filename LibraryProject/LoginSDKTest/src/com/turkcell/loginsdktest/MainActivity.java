@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 //	intent.putExtra("isLogout", "true");
 	intent.putExtra("fontPath","fonts/LDFComicSans.ttf");
 //	intent.putExtra("Env", "PROD");//Default test
-	intent.putExtra("appId", "202");// zorunlu
+	intent.putExtra("appId", "123");// zorunlu
 	intent.putExtra("dll", "false");// zorunlu
 	intent.putExtra("loginForce", "false");// zorunlu
 	intent.putExtra("isDirectLogin", "false");// direk wifi login sayfasý açar
