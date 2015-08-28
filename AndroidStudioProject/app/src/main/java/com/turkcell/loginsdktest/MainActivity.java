@@ -21,15 +21,15 @@ public class MainActivity extends Activity {
         intent.putExtra("loginForce", "true");// zorunlu
         intent.putExtra("isDirectLogin", "false");// direk wifi login sayfası açar
         intent.putExtra("pageBackgroundColor", R.color.white);//Sayfan?n arka plan rengi icin
-        intent.putExtra("pageTextColor", R.color.lsdk_gray1);//Sayfadaki textlerin renkleri
+        intent.putExtra("pageTextColor", R.color.lsdk_green1);//Sayfadaki textlerin renkleri
         intent.putExtra("headerBackgroundColor", R.color.flatBlue);//Headerdaki background rengi
         intent.putExtra("headerTextBackgroundColor", R.color.flatBlue);//Headerdaki textin arka plan rengi
         intent.putExtra("headerTextColor", R.color.white);//Headerdaki textin rengi
 //	intent.putExtra("headerTitle", "Turkcell Platinum");//Headerdaki text
         intent.putExtra("positiveButtonColor", R.color.flatBlue);//Positif button renkleri
         intent.putExtra("positiveButtonTextColor", R.color.white);//Positif button text renkleri
-        intent.putExtra("negativeButtonColor", R.color.white);//Negatif button renkleri
-        intent.putExtra("negativeButtonTextColor", R.color.lsdk_gray1);//Negatif button text renkleri
+        intent.putExtra("negativeButtonColor", R.color.lsdk_black);//Negatif button renkleri
+        intent.putExtra("negativeButtonTextColor", R.color.white);//Negatif button text renkleri
         intent.putExtra("inputBackgroundColor", R.color.lsdk_gray_background);//Edittextler icin background rengi
         intent.putExtra("showFreeText", "true");//Free Texti göster
         intent.putExtra("freeText", "bla blab blab bla bla bla");//free text alandaki text
@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
 //	intent.putExtra("checkedCheckBoxButtonDrawable", com.turkcell.loginsdktest.R.drawable.custom_icon);
 //	intent.putExtra("turkcellLogoDrawable", com.turkcell.loginsdktest.R.drawable.d);
 //	intent.putExtra("hidePreloader", "true");//Preloader ı gizle
+        intent.putExtra("hintTextColor", R.color.lsdk_yellow1);//Negatif button text renkleri
+//	intent.putExtra("captchaButtonDrawable", R.drawable.lsdk_icon_refresh);
 
         startActivityForResult(intent, 100);
     }
