@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 //	intent.putExtra("checkedCheckBoxButtonDrawable", com.turkcell.loginsdktest.R.drawable.custom_icon);
 //	intent.putExtra("turkcellLogoDrawable", com.turkcell.loginsdktest.R.drawable.d);
 //	intent.putExtra("hidePreloader", "true");//Preloader ı gizle
-        intent.putExtra("hintTextColor", R.color.lsdk_yellow1);//Negatif button text renkleri
+        intent.putExtra("hintTextColor", R.color.lsdk_yellow1);//Edittext hintlerin rengi
 //	intent.putExtra("captchaButtonDrawable", R.drawable.lsdk_icon_refresh);
 
         startActivityForResult(intent, 100);
