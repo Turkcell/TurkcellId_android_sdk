@@ -24,6 +24,7 @@ dependencies {
     compile 'com.android.support:support-v4:22.2.0'
     compile 'com.mcxiaoke.volley:library:1.0.17@aar'
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.google.code.gson:gson:2.3.1'
 }
 repositories {
     flatDir {
