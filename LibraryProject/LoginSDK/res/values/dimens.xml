@@ -7,4 +7,15 @@
     <dimen name="corner_radius">8dp</dimen>
     <dimen name="badge_corner_radius">5dp</dimen>
 
+    <dimen name="lsdk_padding">16dp</dimen>
+    <dimen name="lsdk_padding_small">8dp</dimen>
+    <dimen name="lsdk_padding_tiny">4dp</dimen>
+
+
+    <dimen name="lsdk_textsize_small">14sp</dimen>
+    <dimen name="lsdk_textsize">18sp</dimen>
+    <dimen name="lsdk_textsize_big">20sp</dimen>
+    <dimen name="lsdk_textsize_huge">24sp</dimen>
+    <dimen name="lsdk_textsize_extra_huge">125sp</dimen>
+
 </resources>

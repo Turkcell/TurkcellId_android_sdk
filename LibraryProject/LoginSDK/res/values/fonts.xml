@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lsdk_font_turkcell_satura_regular">Turkcell_Satura_Regular.ttf</string>
+    <string name="lsdk_font_turkcell_satura_medium">Turkcell_Satura_Medium.ttf</string>
+    <string name="lsdk_font_turkcell_satura_bold">Turkcell_Satura_Bold.ttf</string>
+    <string name="lsdk_font_turkcell_satura_demi">Turkcell_Satura_Demi.ttf</string>
+    <string name="lsdk_font_ldf_comicsi">LDFComicSans.ttf</string>
+    <string name="lsdk_font_ldf_comics_bold">LDFComicSansBold.ttf</string>
+</resources>

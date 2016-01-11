@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lsdkHeader"
+        layout="@layout/login_sdk_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/lsdk_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                android:id="@+id/lsdkTextViewMsisdn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="532 224 35 36"
+                android:textSize="@dimen/lsdk_textsize_huge" />
+
+            <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/lsdkDescription"
+                android:text="Numaralı telefona gönderilmiştir" />
+
+            <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                android:id="@+id/lsdkTextViewTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:lsdkCustomFont="@string/lsdk_font_turkcell_satura_bold"
+                android:paddingBottom="@dimen/lsdk_padding"
+                android:paddingTop="@dimen/lsdk_padding"
+                tools:text="2:35"
+                android:textColor="@color/lsdk_defaultHeaderColor"
+                android:textSize="@dimen/lsdk_textsize_extra_huge" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/lsdkLinearLayoutEditTexts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        android:id="@+id/lsdkEditTextOtp1"
+                        style="@style/LSDKEditText.SendOtp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="1" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        style="@style/LSDKEditText.SendOtp"
+                        android:layout_width="0dp"
+                        android:id="@+id/lsdkEditTextOtp2"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="1" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        style="@style/LSDKEditText.SendOtp"
+                        android:id="@+id/lsdkEditTextOtp3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="1" />
+
+                    <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                        style="@style/LSDKEditText.SendOtp"
+                        android:id="@+id/lsdkEditTextOtp4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="1" />
+
+                </LinearLayout>
+
+                <com.turkcell.loginsdk.helper.LoginSdkButton
+                    android:id="@+id/lsdkButtonReSend"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/lsdk_retry_text" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

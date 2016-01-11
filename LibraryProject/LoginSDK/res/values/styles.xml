@@ -1,8 +1,69 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="LoginSDKAppTheme" parent="android:Theme.NoTitleBar">
+    <style name="LoginSDKAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+
+        <item name="lsdkTextViewStyle">@style/LSDKTextView</item>
+        <item name="lsdkButtonStyle">@style/LSDKButton</item>
+        <item name="lsdkEditTextStyle">@style/LSDKEditText</item>
+        <item name="lsdkCheckBoxStyle">@style/LSDKCheckBox</item>
     </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="LSDKTextView" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="lsdkCustomFont">@string/lsdk_font_turkcell_satura_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/lsdk_textsize</item>
+    </style>
+
+    <style name="LSDKCheckBox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="lsdkCustomFont">@string/lsdk_font_turkcell_satura_medium</item>
+        <item name="android:textSize">@dimen/lsdk_textsize</item>
+    </style>
+
+    <style name="LSDKEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/shape_rounded_edittext_without_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">@dimen/lsdk_padding</item>
+        <item name="lsdkCustomFont">@string/lsdk_font_turkcell_satura_medium</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textSize">@dimen/lsdk_textsize</item>
+    </style>
+
+    <style name="LSDKButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/shape_rounded_edittext_without_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="lsdkCustomFont">@string/lsdk_font_turkcell_satura_demi</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">@dimen/lsdk_textsize</item>
+    </style>
+
+
+    <!---Edit Text Styles-->
+
+    <style name="LSDKEditText.SendOtp">
+        <item name="android:layout_margin">@dimen/lsdk_padding_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <!---Edit Text Styles-->
+
 
 </resources>

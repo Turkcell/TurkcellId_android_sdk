@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lsdkRelativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lsdk_defaultHeaderColor"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/lsdkImageViewHeaderLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/imageContentDesc"
+            android:gravity="center"
+            android:padding="@dimen/lsdk_padding"
+            android:src="@drawable/lsdk_icon_ustbar_back" />
+
+        <ImageView
+            android:id="@+id/lsdkImageViewHeaderCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/imageContentDesc"
+            android:src="@drawable/lsdk_icon_ustbar_turkcellcircle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lsdkLinearLayoutHeaderTextBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/lsdk_defaultHeaderColor"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/lsdk_padding_small"
+        android:paddingLeft="@dimen/lsdk_padding"
+        android:paddingRight="@dimen/lsdk_padding"
+        android:paddingTop="@dimen/lsdk_padding_small">
+
+        <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+            android:id="@+id/lsdkTextViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="@string/lsdkchangePasswordHeader"
+            android:textColor="@color/lsdk_white"
+            android:textSize="@dimen/lsdk_textsize_big"
+             />
+    </LinearLayout>
+
+</LinearLayout>

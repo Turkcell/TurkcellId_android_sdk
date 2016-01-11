@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:extraproperty="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/popover_background"
@@ -32,7 +31,7 @@
         android:textColor="@color/lsdk_black"
         android:textSize="20sp"
         android:layout_gravity="center"
-        extraproperty:loginSDKCustomFont="Turkcell_Satura_Bold.ttf" >
+         >
 	</com.turkcell.loginsdk.helper.LoginSDKFontTextView>
 
     <com.turkcell.loginsdk.helper.LoginSDKFontTextView
@@ -47,7 +46,7 @@
         android:minEms="100"
         android:textColor="@color/lsdk_black"
         android:textSize="18sp"
-        extraproperty:loginSDKCustomFont="Turkcell_Satura_Demi.ttf" >
+         >
     </com.turkcell.loginsdk.helper.LoginSDKFontTextView>
 
     <com.turkcell.loginsdk.helper.LoginSDKFontTextView

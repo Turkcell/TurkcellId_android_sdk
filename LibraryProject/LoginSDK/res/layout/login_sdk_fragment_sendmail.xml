@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lsdkHeader"
+        layout="@layout/login_sdk_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/lsdk_padding">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/lsdk_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lsdk_padding"
+                android:layout_marginLeft="@dimen/lsdk_padding"
+                android:layout_marginTop="@dimen/lsdk_padding"
+                android:src="@drawable/img_email" />
+
+            <com.turkcell.loginsdk.helper.LoginSDKFontTextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lsdk_padding"
+                android:layout_marginTop="@dimen/lsdk_padding"
+                android:gravity="center" />
+
+            <com.turkcell.loginsdk.helper.LoginSDKFontEdittext
+                android:id="@+id/lsdkEditTextEmail"
+                style="@style/LSDKEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lsdk_padding"
+                android:layout_marginTop="@dimen/lsdk_padding"
+                android:focusableInTouchMode="true"
+                android:hint="@string/lsdk_mail_hint" />
+
+            <com.turkcell.loginsdk.helper.LoginSdkButton
+                android:id="@+id/lsdkButtonRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rounded_button_positive_background_with_color"
+                android:text="@string/lsdk_mail_remmeberme" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

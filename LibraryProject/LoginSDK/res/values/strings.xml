@@ -114,4 +114,21 @@
     <string name="rememberMeInfoPart1">Cihazınıza yüklü Hesabım uygulamasına giriş yaparken de</string>
     <string name="rememberMeInfoPart2">numaralı hattınızı hatırlamamızı ister misiniz?</string>
 
+
+    <!--Send OTP-->
+    <string name="lsdk_retry_text">Tekrardan Gönder</string>
+    <string name="loginpage_remeberme_hint_default">Beni Hatırla</string>
+    <string name="lsdk_send_otp_title">Doğrulama Kodu Giriniz</string>
+    <string name="lsdk_send_mail_title">Beni Hatırla</string>
+    <string name="lsdk_mail_hint">E-Posta</string>
+    <string name="lsdk_otp_gsm_hint">GSM Numaranız</string>
+    <string name="lsdk_otp_gsm_next">Devam</string>
+    <string name="lsdk_otp_othergsm">Başka Numarayla Giriş Yap</string>
+    <string name="lsdk_otp_gsm_title">Giriş Yap</string>
+    <string name="lsdk_mail_remmeberme">Evet, Beni Hatırla</string>
+    <string name="lsdk_mail_wrongmail_error">E-posta adresinizi hatalı girdiniz. Lütfen kontrol ederek tekrar deneyiniz</string>
+    <string name="lsdk_mail_description"> numaralı hattınız ile giriş işlemini tamamlamak için size ait geçerli bir e-posta adresi girmelisiniz.</string>
+
+    <!--Send OTP-->
+
 </resources>

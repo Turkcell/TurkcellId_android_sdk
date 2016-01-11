@@ -5,10 +5,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true"
@@ -26,10 +27,12 @@
             </intent-filter>
         </activity>
         <!-- LoginSDK activity -->
-        <activity
+          <activity
             android:name="com.turkcell.loginsdk.activity.LoginSDKMainActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="standard"
+
+            android:theme="@style/Theme.AppCompat.Translucent" />
     </application>
 
 </manifest>
