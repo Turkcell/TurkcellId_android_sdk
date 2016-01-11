@@ -83,8 +83,10 @@ public class MainActivity extends Activity {
         //intent.putExtra(LoginSdk.KEY_TURKCELL_LOGO_DRAWABLE, com.turkcell.loginsdktest.R.drawable.d);
         //intent.putExtra(LoginSdk.KEY_HIDE_PRELOADER, "true");//Preloader ı gizle
         intent.putExtra(LoginSdk.KEY_HINT_TEXT_COLOR, R.color.lsdk_yellow1);//Edittext hintlerin rengi
-        //intent.putExtra(LoginSdk.KEY_CAPTCHA_BUTTON_DRAWABLE, R.drawable.lsdk_icon_refresh);
+        //intent.putExtra(LoginSdk.KEY_CHECKHED_CHECKBOX_BUTTON_DRAWABLE, R.drawable.abc_ab_share_pack_mtrl_alpha);//Checkbox secili imagei
+        //intent.putExtra(LoginSdk.KEY_UNCHECKHED_CHECKBOX_BUTTON_DRAWABLE, R.drawable.abc_btn_borderless_material);//Checkbox secili degil imageii
 
+        //intent.putExtra(LoginSdk.KEY_CAPTCHA_BUTTON_DRAWABLE, R.drawable.lsdk_icon_refresh);
         startActivityForResult(intent, 100);
     }
 
