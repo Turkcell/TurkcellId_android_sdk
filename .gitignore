@@ -10,3 +10,6 @@ LibraryProject/.metadata
 .idea/misc.xml
 .idea/workspace.xml
 .idea/copyright/profiles_settings.xml
+LibraryProject/android-support-v7-appcompat/bin
+LibraryProject/.recommenders
+LibraryProject/LoginSDKTest/gen
