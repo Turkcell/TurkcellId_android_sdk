@@ -83,7 +83,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:clickable="true"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:visibility="gone">
@@ -117,11 +116,11 @@
                             android:id="@+id/editTextCaptcha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:focusableInTouchMode="true"
                             android:layout_marginTop="15dp"
                             android:background="@drawable/shape_rounded_edittext_without_background"
                             android:ellipsize="end"
                             android:ems="10"
+                            android:focusableInTouchMode="true"
                             android:gravity="left"
                             android:hint="@string/loginNormalLoginCapthchaHint"
                             android:inputType="phone"
@@ -145,23 +144,23 @@
                             android:id="@+id/checkBoxNormalLoginRememberMe"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:button="@drawable/lsdk_selector_rememberme_checkbox"
-                            android:textSize="16sp"
-                            android:clickable="true"
-                            android:layout_centerVertical="true"
                             android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true" />
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/lsdk_selector_rememberme_checkbox"
+                            android:clickable="true"
+                            android:textSize="16sp" />
 
                         <com.turkcell.loginsdk.helper.LoginSDKFontTextView
                             android:id="@+id/checkBoxNormalLoginRememberMeHint"
-                            android:text="@string/loginRemindMe"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/lsdk_gray1"
-                            android:layout_marginLeft="4dp"
                             android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toEndOf="@+id/checkBoxNormalLoginRememberMe"
                             android:layout_toRightOf="@+id/checkBoxNormalLoginRememberMe"
-                            android:layout_toEndOf="@+id/checkBoxNormalLoginRememberMe" />
+                            android:text="@string/loginRemindMe"
+                            android:textColor="@color/lsdk_gray1" />
                     </RelativeLayout>
 
                     <com.turkcell.loginsdk.helper.LoginSDKFontTextView
