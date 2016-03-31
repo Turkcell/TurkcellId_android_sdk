@@ -42,7 +42,6 @@
         <item name="android:padding">@dimen/lsdk_padding</item>
         <item name="lsdkCustomFont">@string/lsdk_font_turkcell_satura_medium</item>
         <item name="android:singleLine">true</item>
-        <item name="android:focusableInTouchMode">true</item>
         <item name="android:textSize">@dimen/lsdk_textsize</item>
     </style>
 
