@@ -1,27 +1,41 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     android:padding="@dimen/activity_vertical_margin"
     tools:context="com.turkcell.loginsdktest.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerInParent="true"
+        android:text="@string/hello_world"
+        android:textSize="25sp" />
 
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonLogin3g"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_above="@+id/buttonLogout"
-        android:text="Log In" />
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="Login 3g" />
+
+    <Button
+        android:id="@+id/buttonLoginWithout3g"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="Login Without 3g" />
+
 
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_alignParentBottom="true"
-        android:text="Log Out" />
-</RelativeLayout>
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="LogOut" />
+
+</LinearLayout>

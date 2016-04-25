@@ -15,6 +15,11 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+            <item name="lsdkTextViewStyle">@style/LSDKTextView</item>
+            <item name="lsdkButtonStyle">@style/LSDKButton</item>
+            <item name="lsdkEditTextStyle">@style/LSDKEditText</item>
+            <item name="lsdkCheckBoxStyle">@style/LSDKCheckBox</item>
     </style>
 
 </resources>
