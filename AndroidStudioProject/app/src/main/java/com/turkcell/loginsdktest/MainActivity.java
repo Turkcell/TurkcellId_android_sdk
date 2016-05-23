@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
 
     private Button buttonLogout;
     private Button buttonLogin;
+    private final static String APP_ID = "123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
         buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginSdk.logOut(MainActivity.this, new LoginSdkCallBack<LogoutResponse>() {
+                LoginSdk.logOut(APP_ID, LoginSdk.KEY_ENV_PROD, MainActivity.this, new LoginSdkCallBack<LogoutResponse>() {
                     @Override
                     public void onSuccess(LogoutResponse logoutResponse) {
                         Toast.makeText(MainActivity.this, "Logout Success", Toast.LENGTH_SHORT).show();
@@ -59,7 +60,7 @@ public class MainActivity extends Activity {
         //intent.putExtra(LoginSdk.KEY_IS_LOGOUT, "true");
         intent.putExtra(LoginSdk.KEY_FONT_PATH, "fonts/LDFComicSans.ttf");
         //intent.putExtra(LoginSdk.KEY_ENV, LoginSdk.KEY_ENV_PROD);//Default test
-        intent.putExtra(LoginSdk.KEY_APP_ID, "123");// zorunlu
+        intent.putExtra(LoginSdk.KEY_APP_ID, APP_ID);// zorunlu
         intent.putExtra(LoginSdk.KEY_DLL, "true");// zorunlu
         //loginforce change to ShowLoginPage
         intent.putExtra(LoginSdk.KEY_SHOW_LOGIN_PAGE, "true");// zorunlu
