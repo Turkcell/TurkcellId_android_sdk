@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 
     private void setButtons() {
         textView = (TextView) findViewById(R.id.textView);
-        textView.setText("AppId : " + appId);
+        textView.setText("AppId : " + APP_ID);
         buttonLogin3g = (Button) findViewById(R.id.buttonLogin3g);
         buttonLoginWithout3g = (Button) findViewById(R.id.buttonLoginWithout3g);
         buttonLogout = (Button) findViewById(R.id.buttonLogout);
@@ -94,14 +94,11 @@ public class MainActivity extends Activity {
     private Intent getLsdkIntent() {
         Intent intent = new Intent(this, com.turkcell.loginsdk.activity.LoginSDKMainActivity.class);
 
-        <<<<<<<HEAD
         //logout call changed to LoginSdk.logout(context,LoginSdkCallback);
         //intent.putExtra(LoginSdk.KEY_IS_LOGOUT, "true");
         intent.putExtra(LoginSdk.KEY_FONT_PATH, "fonts/LDFComicSans.ttf");
         //intent.putExtra(LoginSdk.KEY_ENV, LoginSdk.KEY_ENV_PROD);//Default test
         intent.putExtra(LoginSdk.KEY_APP_ID, APP_ID);// zorunlu
-        =======
-        >>>>>>>3f 096d 7 b565e4e9d7b37b8c8da9eac75f68243a9
         intent.putExtra(LoginSdk.KEY_DLL, "true");// zorunlu
         intent.putExtra(LoginSdk.KEY_SHOW_LOGIN_PAGE, "true");// zorunlu
         intent.putExtra(LoginSdk.KEY_IS_DIRECT_LOGIN, "true");// zorunlu
@@ -112,7 +109,7 @@ public class MainActivity extends Activity {
     }
 
     private void setIntentDefValues(Intent intent) {
-        intent.putExtra(LoginSdk.KEY_APP_ID, appId);// zorunlu
+        intent.putExtra(LoginSdk.KEY_APP_ID, APP_ID);// zorunlu
         intent.putExtra(LoginSdk.KEY_PAGE_BACKGROUND_COLOR, R.color.white);//Sayfan?n arka plan rengi icin
         intent.putExtra(LoginSdk.KEY_PAGE_TEXT_COLOR, R.color.lsdk_gray1);//Sayfadaki textlerin renkleri
         intent.putExtra(LoginSdk.KEY_HEADER_BACKGROUND_COLOR, R.color.lsdk_defaultHeaderColor);//Headerdaki background rengi
