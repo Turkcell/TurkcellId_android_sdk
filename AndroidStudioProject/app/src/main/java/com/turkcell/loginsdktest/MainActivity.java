@@ -77,6 +77,7 @@ public class MainActivity extends Activity {
         intent.putExtra(LoginSdk.KEY_DLL, "false");// zorunlu
         intent.putExtra(LoginSdk.KEY_SHOW_LOGIN_PAGE, "false");// zorunlu
         intent.putExtra(LoginSdk.KEY_IS_DIRECT_LOGIN, "false");// zorunlu
+        intent.putExtra(LoginSdk.KEY_TURKCELL_LOGO_DRAWABLE, R.drawable.icon_changepass);
         setIntentDefValues(intent);
         return intent;
     }
@@ -86,6 +87,7 @@ public class MainActivity extends Activity {
         intent.putExtra(LoginSdk.KEY_DLL, "true");// zorunlu
         intent.putExtra(LoginSdk.KEY_SHOW_LOGIN_PAGE, "true");// zorunlu
         intent.putExtra(LoginSdk.KEY_IS_DIRECT_LOGIN, "false");// zorunlu
+        intent.putExtra(LoginSdk.KEY_TURKCELL_LOGO_DRAWABLE, R.drawable.icon_changepass);
         setIntentDefValues(intent);
         return intent;
     }
