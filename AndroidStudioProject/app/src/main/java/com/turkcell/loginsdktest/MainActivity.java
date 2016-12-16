@@ -120,8 +120,8 @@ public class MainActivity extends Activity {
         intent.putExtra(LoginSdk.KEY_HEADER_TITLE, "Turkcell Platinum");//Headerdaki text
         intent.putExtra(LoginSdk.KEY_POSITIVE_BUTTON_COLOR, R.color.lsdk_defaultSignInButtonColor);//Positif button renkleri
         intent.putExtra(LoginSdk.KEY_POSITIVE_BUTTON_TEXT_COLOR, R.color.c_363E4F);//Positif button text renkleri
-        intent.putExtra(LoginSdk.KEY_NEGATICE_BUTTON_COLOR, R.color.c_f4f5f8);//Negatif button renkleri
-        intent.putExtra(LoginSdk.KEY_NEGATICE_BUTTON_TEXT_COLOR, R.color.c_363E4F);//Negatif button text renkleri
+        intent.putExtra(LoginSdk.KEY_NEGATIVE_BUTTON_COLOR, R.color.c_f4f5f8);//Negatif button renkleri
+        intent.putExtra(LoginSdk.KEY_NEGATIVE_BUTTON_TEXT_COLOR, R.color.c_363E4F);//Negatif button text renkleri
         intent.putExtra(LoginSdk.KEY_INPUT_BACKGROUND_COLOR, R.color.lsdk_gray_background);//Edittextler icin background rengi
         intent.putExtra(LoginSdk.KEY_ENV, ENV);//Default test
         //intent.putExtra(LoginSdk.KEY_FONT_PATH, "fonts/LDFComicSansBold.ttf");
