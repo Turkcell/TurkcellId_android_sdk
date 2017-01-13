@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile(name: 'loginsdk-4.2', ext: 'aar')
+    compile(name: 'loginsdk-4.4', ext: 'aar')
     compile 'com.android.support:support-v4:25.1.0'
     compile 'com.mcxiaoke.volley:library:1.0.17@aar'
     compile 'com.android.support:appcompat-v7:25.1.0'
