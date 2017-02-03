@@ -38,4 +38,38 @@
         android:padding="8dp"
         android:text="LogOut" />
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radioTR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="TR" />
+
+        <RadioButton
+            android:id="@+id/radioEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EN" />
+
+        <RadioButton
+            android:id="@+id/radioUK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UA" />
+
+        <RadioButton
+            android:id="@+id/radioRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RU" />
+
+    </RadioGroup>
+
 </LinearLayout>
