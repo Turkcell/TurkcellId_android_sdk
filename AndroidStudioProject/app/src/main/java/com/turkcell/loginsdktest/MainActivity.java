@@ -2,9 +2,7 @@ package com.turkcell.loginsdktest;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -13,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.turkcell.loginsdk.helper.LoginSdk;
-import com.turkcell.loginsdk.pojo.LoginSDKSession;
 import com.turkcell.loginsdk.service.callback.LoginSdkCallBack;
 import com.turkcell.loginsdk.service.callback.LogoutResponse;
 
