@@ -21,8 +21,8 @@ public class MainActivity extends Activity {
     private Button buttonLogout;
     private TextView textView;
     private static final int LOGINSDK_REQUEST_CODE = 111;
-    private String appId = "201";
-    private String ENV = LoginSdk.KEY_ENV_TEST;
+    private String appId = "49842";
+    private String ENV = LoginSdk.KEY_ENV_PROD;
     private LoginSdk.Language LANG = LoginSdk.Language.TR;
 
     // This will get the radiogroup
@@ -96,8 +96,8 @@ public class MainActivity extends Activity {
                         LANG = LoginSdk.Language.TR;
                     } else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.EN.toString())) {
                         LANG = LoginSdk.Language.EN;
-                    } else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.UA.toString())) {
-                        LANG = LoginSdk.Language.UA;
+                    } else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.UK.toString())) {
+                        LANG = LoginSdk.Language.UK;
                     } else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.RU.toString())) {
                         LANG = LoginSdk.Language.RU;
                     }

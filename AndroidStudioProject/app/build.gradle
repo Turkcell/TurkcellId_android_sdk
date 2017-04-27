@@ -22,7 +22,7 @@ android {
 dependencies {
     ext.supportLibraryVersion = '25.3.1'
 
-    compile(name: 'tloginsdk-2.2.1', ext: 'aar')
+    compile(name: 'tloginsdk-2.2.2', ext: 'aar')
     compile "com.android.support:support-v4:$supportLibraryVersion"
     compile 'com.android.volley:volley:1.0.0'
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
