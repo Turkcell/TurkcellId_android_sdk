@@ -100,6 +100,8 @@ public class MainActivity extends Activity {
                         LANG = LoginSdk.Language.UK;
                     } else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.RU.toString())) {
                         LANG = LoginSdk.Language.RU;
+                    }else if (checkedRadioButton.getText().toString().equalsIgnoreCase(LoginSdk.Language.DE.toString())) {
+                        LANG = LoginSdk.Language.DE;
                     }
 
                 }
